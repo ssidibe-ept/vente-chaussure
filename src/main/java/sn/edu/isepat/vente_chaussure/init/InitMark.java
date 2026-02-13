@@ -1,10 +1,12 @@
 package sn.edu.isepat.vente_chaussure.init;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import sn.edu.isepat.vente_chaussure.entities.Mark;
 import sn.edu.isepat.vente_chaussure.repositories.MarkRepository;
 
+@Order(1)
 @Component
 public class InitMark implements CommandLineRunner {
 
@@ -20,5 +22,10 @@ public class InitMark implements CommandLineRunner {
         Mark nike=new Mark();
         nike.setNom("Nike");
       markRepository.save(nike);
+
+      Mark hermes=new Mark();
+        hermes.setNom("hermes rose");
+        markRepository.save(hermes);
+
     }
 }
