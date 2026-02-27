@@ -1,0 +1,3 @@
+Modifier le controller UtilisateurController pour que toutes les methodes retournent
+ResponseEntity en tenant compte des codes erreurs
+Documenter les methodes swagger
